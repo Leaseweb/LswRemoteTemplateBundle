@@ -1,0 +1,9 @@
+parameters:
+  lsw_remote_template.class: Lsw\RemoteTemplateBundle\Templating\RemoteSessionCachedTemplate
+  
+services:
+  lsw_remote_template:
+    class: %lsw_remote_template.class%
+    arguments: [%lsw_remote_template.config%,@session,@api_caller.curl]
+    tags:
+      - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }  
