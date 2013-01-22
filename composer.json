@@ -24,7 +24,7 @@
         "willdurand/propel-typehintable-behavior": "dev-master",
         "symfony/yaml": "2.1.*",
         "symfony/validator": "2.1.*",
-        "leaseweb/api-caller-bundle": "*",
+        "leaseweb/api-caller-bundle": "*"
     },
     "autoload": {
         "psr-0": { "Lsw\\RemoteTemplateBundle": "" }
