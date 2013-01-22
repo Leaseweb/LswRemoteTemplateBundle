@@ -1,0 +1,38 @@
+{
+    "name": "leaseweb/remote-template-bundle",
+    "type": "symfony-bundle",
+    "description": "LeaseWeb LswRemoteTemplateBundle",
+    "keywords": ["remote","template","Symfony2"],
+    "homepage": "http://www.leaseweblabs.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maurits van der Schee",
+            "email": "m.vanderschee@leaseweb.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.1,<2.3-dev",
+        "symfony/security-bundle": ">=2.1,<2.3-dev"
+    },
+    "require-dev": {
+        "twig/twig": "*",
+        "doctrine/doctrine-bundle": "*",
+        "swiftmailer/swiftmailer": "*",
+        "willdurand/propel-typehintable-behavior": "dev-master",
+        "symfony/yaml": "2.1.*",
+        "symfony/validator": "2.1.*"
+        "leaseweb/api-caller-bundle": "*",
+    },
+    "autoload": {
+        "psr-0": { "Lsw\\RemoteTemplateBundle": "" }
+    },
+    "target-dir": "Lsw/RemoteTemplateBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
