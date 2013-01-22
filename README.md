@@ -153,3 +153,78 @@ class Symfony2AuthenticationFilter extends sfFilter
   }
 }
 ```
+
+3. Bundle installation
+----
+
+Installation is broken down in the following steps:
+
+1. Download LswRemoteTemplateBundle using composer
+2. Enable the Bundle
+3. Make sure the cURL module in PHP is enabled
+
+### Step 1: Download LswRemoteTemplateBundle using composer
+
+Add LswRemoteTemplateBundle in your composer.json:
+
+```js
+{
+    "require": {
+        "leaseweb/remote-template-bundle": "*"
+    }
+}
+```
+
+Now tell composer to download the bundle by running the command:
+
+``` bash
+$ php composer.phar update leaseweb/remote-template-bundle
+```
+
+Composer will install the bundle to your project's `vendor/leaseweb` directory.
+
+### Step 2: Enable the bundle
+
+Enable the bundle in the kernel:
+
+``` php
+<?php
+// app/AppKernel.php
+
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new Lsw\RemoteTemplateBundle\LswRemoteTemplateBundle(),
+    );
+}
+```
+
+### Step 3: Make sure the cURL module in PHP is enabled
+
+On a Debian based distribution (like Ubuntu) the package is called "php5-curl" and
+can be installed using the following commands:
+
+``` bash
+$ sudo apt-get install php5-curl
+$ sudo service apache2 restart
+```
+
+On a RedHat based distribution (like CentOS) the package is called "php-curl" and
+can be installed using the following commands:
+
+``` bash
+$ sudo yum install php-curl
+$ sudo service httpd restart
+```
+
+To check this create and run a PHP file with the following contents:
+
+``` php
+<?php phpinfo() ?>
+```
+
+It should display that the option "cURL support" is set to "enabled".
+
+This package should work on a Windows installation as well provided the CURL support
+is enabled in PHP.
