@@ -3,9 +3,15 @@ LswRemoteTemplateBundle
 
 On December 21, 2011 Stefan Koopmanschap wrote an excellent article on the LeaseWeb Labs blog
 titled “Painless (well, less painful) migration to Symfony2.” In his article he explained the
-advantages of doing a gradual migration. The technical solution that he proposed to make this
+advantages of doing a gradual migration. 
+
+see: http://www.leaseweblabs.com/2011/12/painless-well-less-painful-migration-to-symfony2/
+
+The technical solution that he proposed to make this
 possible was to “...wrap your old application into your Symfony2 application.” He even provided
 us the tool (The IngewikkeldWrapperBundle code) to do so.
+
+see: https://github.com/Ingewikkeld/IngewikkeldWrapperBundle
 
 We were very much inspired by his passionate elucidation and we were fully convinced of the
 urge to start migrating to Symfony2 as soon as possible. However, he also provided us with a
@@ -16,10 +22,8 @@ get some people worried, but not us: it challenged us to find a solution for tho
 ----
 
 As Stefan Koopmanschap explains, in his solution you “...use two frameworks for all your legacy
-pages” and “...two frameworks add more overhead than one.” Since our Symfony1 application (the
-LeaseWeb Self Service Center) is not the fastest you've ever seen, some customers are even complaining
-about it's speed, this got us a little worried. Losing performance was not really an option, so we
-had to find a solution.
+pages” and “...two frameworks add more overhead than one.” This got us a little worried.
+Losing performance was not really an option, so we had to find a solution.
 
 Symfony 1 & 2 both use a Front Controller architecture (one file handling all requests) we were
 just looking for seperating traffic between the two front controllers. Stefan proposed to do so
