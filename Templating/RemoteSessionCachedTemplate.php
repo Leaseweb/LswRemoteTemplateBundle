@@ -2,7 +2,7 @@
 namespace Lsw\RemoteTemplateBundle\Templating;
 
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
-use Symfony\Component\HttpFoundation\Session;
+use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Lsw\ApiCallerBundle\Caller\ApiCallerInterface;
 use Lsw\ApiCallerBundle\Call\HttpGetHtml;
