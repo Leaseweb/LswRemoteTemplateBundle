@@ -4,6 +4,6 @@ parameters:
 services:
   lsw_remote_template:
     class: %lsw_remote_template.class%
-    arguments: [%lsw_remote_template.config%,@session,@api_caller.curl]
+    arguments: [%lsw_remote_template.config%,@session,@api_caller]
     tags:
       - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }  
