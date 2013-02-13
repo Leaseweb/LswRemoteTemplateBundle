@@ -1,5 +1,5 @@
 parameters:
     lsw_remote_template.config:
-        activation_comment: '<!-- REMOTE_TEMPLATE %s -->';
-        replacement_comment: '<!-- BUNDLE_CONTENTS -->';
+        activation_comment: '<!-- REMOTE_TEMPLATE %s -->'
+        replacement_comment: '<!-- BUNDLE_CONTENTS -->'
         cache_time_in_seconds: 10
