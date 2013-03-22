@@ -1,7 +1,7 @@
 {
     "name": "leaseweb/remote-template-bundle",
     "type": "symfony-bundle",
-    "description": "LeaseWeb LswRemoteTemplateBundle",
+    "description": "Load your (view) template from a remote site",
     "keywords": ["remote","template","Symfony2"],
     "homepage": "http://www.leaseweblabs.com",
     "license": "MIT",
