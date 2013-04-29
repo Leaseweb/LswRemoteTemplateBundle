@@ -170,7 +170,8 @@ Add LswRemoteTemplateBundle in your composer.json:
 ```js
 {
     "require": {
-        "leaseweb/remote-template-bundle": "1.0.*@dev"
+        "leaseweb/remote-template-bundle": "*",
+        ...
     }
 }
 ```
